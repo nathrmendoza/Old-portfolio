@@ -1,0 +1,213 @@
+html {
+	overflow-x: hidden;
+}
+html, body {
+	margin : 0;
+	padding: 0;
+}
+
+body{
+	color: white;
+	height: 2000px;
+	background-color: #1e1e1e;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Roboto;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+p{
+	line-height: 32px;
+	font-size: 1.25em;
+	letter-spacing: 0.25px;
+	font-family: Roboto Slab;
+}
+
+
+/*Fixed Social Links*/
+#fixed-soc {
+	position: fixed;
+	margin-top: 24px;
+	margin-left: 24px;
+
+}
+
+.soc-cont a {
+	display: block;
+	padding: 8px 0 8px 0;
+}
+
+.soc-cont img {
+	width: 48px;
+}
+
+/*Header*/
+.head-cont {
+	height: 75vh;
+	text-align: center;
+	background-image: url("../images/headerbg.jpg");
+	
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+
+	background-attachment: fixed;
+}
+
+.pream {
+	padding-top: 25vh;
+}
+.pream img {
+	margin: 0 auto 0 auto;
+	display: block;
+}
+
+.pream span {
+	font-family: 'Roboto';
+	font-size: 2em;
+	display: block;
+	color: white;
+}
+
+.main{
+	margin: 0 12vw 0 12vw;
+}
+
+#ovrvw{
+	padding-top: 20vh; padding-bottom: 10vh;
+}
+
+.ovr-cont {
+	text-align: left;
+}
+
+
+
+/*WORK SECTION*/
+#work {
+	padding-top: 20vh; padding-bottom: 16vh;
+}
+
+/*SPECIAL SPACESHIP EFFECT*/
+#sfxshit {
+	padding-top: 10px;
+	background-image: url("../images/headerbg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.spcshit {
+	transition-duration: 1s;
+	transform: translateX(-10vw);
+}
+
+/*BACKGROUND SECTION*/
+#bckgrnd {
+	padding-top: 20vh; padding-bottom: 16vh;
+}
+.lngs {
+	margin-top: 48px;
+}
+
+.lng-row {
+	
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.lng-col{
+
+	max-width: 300px;
+	margin: 0 auto 0 auto;
+	text-align: left;
+}
+
+.spc-col {
+	max-width: 600px;
+}
+
+.lng-col img {
+	width: 150px;
+}
+
+/*Footer*/
+#spcshp {
+	opacity: 0;
+	transition-delay: 0.5s;
+	transition-duration: 1s;
+}
+
+#spcshp img{
+	margin: 0 auto 0 auto;
+}
+
+#spctalk {
+	margin: 0 auto 0 auto;
+	max-width: 375px;
+	opacity: 0;
+	transition-delay: 1.25s;
+	transition-duration: 0.2s;
+	font-family: 'Roboto';
+	font-size: 1.75em;
+	display: block;
+	color: white;
+}
+
+.spanChange {
+	opacity: 1 !important;
+}
+
+.helloSpc {
+	opacity: 1 !important;
+	transform: translateY(20vh);
+}
+/*NAV*/
+#navbar {
+	opacity : 0;
+	transition-duration : 0.2s;
+	z-index : 999;
+	position: fixed;
+	width: 100vw;
+	padding : 10px 24px;
+	background-color: white;
+}
+
+#navbar h2 {
+	padding: 0; margin : 0;
+	color : #1e1e1e !important;
+	display: inline-block;
+}
+.sec-cont {
+	display: inline-block;
+	margin-left: 10vw;
+}
+.sec-cont a {
+	margin : 0 10px;
+	text-decoration : none;
+	color : #1e1e1e;
+	font-size : 1em;
+	font-family : Roboto;
+}
+
+/* MEDIA QUERIES */
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width : 320px) and (max-width: 1024px){
+	.soc-cont img {
+		width: 36px !important;
+	}
+
+	.pream img {
+		width: 180px !important;
+	}
+
+	.pream span {
+		font-size: 1.5em !important;
+	}
+}
